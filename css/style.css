@@ -1,0 +1,16 @@
+p:last-child{
+    color: red;
+}
+p:first-child{
+    color: blue;
+}
+p:nth-of-type(2){
+    color: #00FF00;
+}
+p:nth-of-type(2n){
+    color: brown;
+}
+
+p:hover{
+    color: cyan;
+}
