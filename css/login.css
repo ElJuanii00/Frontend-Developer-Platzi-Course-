@@ -1,0 +1,216 @@
+:root{
+    --margin_menu: 1.5rem;
+    --font_menu: 1.6rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Muli', sans-serif;
+}
+
+body{ 
+    background: linear-gradient(to bottom, #2AB585,#824DF3);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header_logo{
+    margin: 0 var(--margin_menu);
+    margin: var(--margin_menu);
+}
+.header_logo img{
+    height: 5rem;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.login_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: .2rem solid white;
+    box-shadow: .1rem .2rem 1rem 0rem rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.1);
+    padding: 10em 5rem;
+    width: 30rem;
+}
+
+.login_container h2{
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 10rem;
+}
+
+.login_container_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem solid white;
+    padding-bottom: 1rem;
+    color: white;
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+}
+
+.input::placeholder{
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    height: 1.6rem;
+}
+
+.btn{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+    height: 5rem;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.form_recovery{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.form_recovery label{
+    display: inline-flex;
+    align-items: center;
+}
+
+.form_recovery label p{
+    font-size: 1.6rem;
+    color: white;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.form_recovery a{
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.form_recovery a:hover{
+    text-decoration: underline;
+}
+
+.login_container_social{
+    display: inline-block;
+    margin-bottom: 5rem;
+}
+
+.login_container_social a{
+    font-size: 1.6rem;
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login_container_social a p{
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.login_container_social a:first-child{
+    margin-bottom: 1rem;
+}
+
+.login_container_account{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.login_container_account a{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    margin-left: 1rem;
+}
+
+.login_container_account a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    display: inline-flex;
+    justify-content: flex-start;
+    padding: 3rem 2rem;
+}
+
+.footer a{
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer a:not(:first-child){
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .login_container{
+        width: 80%;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .form_recovery{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login_container_social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_recovery label{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+}
+
+
+
